@@ -1,0 +1,10 @@
+# 更新为真实API接口（示例为双色球接口）
+base_url = "https://webapi.sporttery.cn/gateway/lottery/getHistoryPageListV1.qry"
+params = {
+    "gameNo": 85,         # 大乐透编号
+    "provinceId": 0, 
+    "pageSize": 30, 
+    "isVerify": 1,
+    "pageNo": page        # 当前页码
+}
+response = requests.get(base_url, params=params, verify=False)  #
